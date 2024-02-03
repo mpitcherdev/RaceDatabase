@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html,
+body {
+    margin: 0px 0px 0px 0px;
+    height: 100vh;
+    overflow: auto;
+    background-color: #1f1f1f;
+    font-family: Poppins, sans-serif;
+}
+.form-wrapper{
+    box-sizing: border-box;
+    padding: 2%;
+    transition: all 150ms ease-in-out 0s;
+    margin: auto;
+    position: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    pointer-events: all;
+    color: rgb(33, 49, 60);
+    background-color: rgba(97, 226, 157, 0.99);
+    border-radius: 24px;
+    box-shadow: rgba(0, 30, 43, 0.6) 0px 8px 20px -8px;
+    width: 40vmax;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+label{
+    margin-bottom:2px;
+}
+h3{
+    text-align: center;
+    font-weight: bolder;
+}
+
+h4{
+    text-align: center;
+    font-weight: bolder;
+}
+textarea[type=text]{
+    width: 100%;
+    height: 55px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s all; 
+    margin-bottom: 15px;
+    border: 1px solid black;
+    padding-top: 8px;
+}
+input[type=text], input[type=date]{
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s all; 
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+#lapMask{
+    width: 85%;
+    height: 45px;
+    border-radius: 4px;
+    position: relative;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.3s all;
+    margin-bottom: 15px;
+    margin-left:20px;
+    padding-left: 15px;
+    color: rgba(0,0,0,.5);
+    border: 1px solid black;
+}
+
+
+
+#lapMask:focus{
+     background-color: white;
+     color: black;
+     border:none;
+     
+}
+
+.nav {
+    box-sizing: border-box;
+    padding: 2%;
+    transition: all 150ms ease-in-out 0s;
+    margin: auto;
+    max-height: 10vh;
+    position: relative;
+    pointer-events: all;
+    color: rgb(33, 49, 60);
+    background-color: rgb(185, 185, 185);
+    border-radius: 24px;
+    box-shadow: rgba(0, 30, 43, 0.6) 0px 8px 20px -8px;
+    width: 90vw;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+
+#lapID{
+    position: absolute;
+    top:10px;
+    font-weight: bolder;
+    border: none;
+    color: black;
+
+}
+.btn {
+    font-weight: 400;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: black;
+    color: black;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 6px 12px 5px;
+    outline: 0;
+    transition: all 120ms ease;
+    box-shadow: none;
+    background-color: rgba(97, 226, 157, 0.99);
+    
+ }
+ #WetBtn, #DryBtn {
+    border-radius: 10px;
+    width: 150px;
+    height: 75px;
+    font-size: 35px;
+    font-weight: bolder;
+    margin: auto;
+    text-align: center; 
+ }
+ #WetBtn {
+    background-color: red;
+    border-color: red;
+    position: relative;
+    margin: 10px;
+    color: white;
+ }
+
+ #DryBtn {
+    background-color: green;
+    border-color: green;
+    position: relative;
+    margin: 10px;
+    color:  rgba(256,256,256 ,.90)
+ }
+    .btn:focus,
+    .btn:hover {
+        background: orangered;
+        border-color: black;
+        box-shadow: 0 2px 3px rgba(0,0,0,.15);
+        outline: 0 !important;
+        color: black;
+    }
+    .btn.active,
+    .btn:active {
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+        outline: 0;
+        background: orangered;
+    }
+    
+#lapGroup {
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+#addButton{
+    margin-left: 20px;
+    border-radius: 4px;
+}
+#remButton{
+    right:2px;
+    position: relative;
+    display: inline;
+    width: 95px;
+    border-radius:4px;
+    border: 1px solid black;
+    height: 45px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(60,60,60);
+    color: rgba(97, 226, 157, 0.99);
+    transform: translateX(2px);  
+} 
+
+
+#dry-wet-buttons{
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.btn-secondary {
+    width: 160px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    background-color:rgb(60,60,60);
+    color:rgba(97, 226, 157, 0.99);
+}
+.btn-link{
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3px;
+    background-color:rgb(60,60,60);
+    color:rgba(97, 226, 157, 0.99);
+}
+.table-wrapper {
+    box-sizing: border-box;
+    padding: 2%;
+    transition: all 150ms ease-in-out 0s;
+    margin: auto;
+    position: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    position: relative;
+    pointer-events: all;
+    color: black;
+    background-color: rgba(97, 226, 157, 0.99);
+    border-radius: 24px;
+    box-shadow: rgba(0, 30, 43, 0.6) 0px 8px 20px -8px;
+    width: 1200px;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+}
+
+table,td,th{
+    border-color: black;
+}
+
+
+.flex-col-hstart-vstart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-col-hcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row-vend {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.txt-title {
+    font-size: 72px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    line-height: 33%;
+    text-align: center;
+    padding: 3% 0px 0px 0px;
+    color: orangered;
+    word-wrap: break-word;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.9);
+    margin-bottom: 86px;
+    margin-top: -10px;
+}
+
+.notes-box {
+    
+    max-width: 350px;
+    box-sizing: border-box;
+    text-align: center;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+
+}
+
